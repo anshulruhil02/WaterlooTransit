@@ -13,7 +13,6 @@ protocol TransitServiceProtocol {
 }
 
 class TransitService: TransitServiceProtocol {
-//    static let shared = TransitService()
     let gtfsURL = "https://webapps.regionofwaterloo.ca/api/grt-routes/api/vehiclepositions"
     
     func fetchData() async throws -> [VehiclePosition] {
