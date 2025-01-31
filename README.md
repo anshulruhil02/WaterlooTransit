@@ -1,2 +1,2 @@
 # WaterlooTransit
- Detailed live information and tracking of every public transit vehicle in WAterloo!
+ Detailed live information and tracking of every public transit vehicle in Waterloo!
