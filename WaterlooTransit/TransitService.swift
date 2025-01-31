@@ -9,15 +9,16 @@ import Foundation
 import SwiftProtobuf
 
 protocol TransitServiceProtocol {
-    func fetchData(url: String) async throws -> [VehiclePosition]
+    func fetchData() async throws -> [VehiclePosition]
 }
 
 class TransitService: TransitServiceProtocol {
-    static let shared = TransitService()
+//    static let shared = TransitService()
+    let gtfsURL = "https://webapps.regionofwaterloo.ca/api/grt-routes/api/vehiclepositions"
     
-    func fetchData(url: String) async throws -> [VehiclePosition] {
+    func fetchData() async throws -> [VehiclePosition] {
         do {
-            guard let url = URL(string: url) else {
+            guard let url = URL(string: gtfsURL) else {
                 throw URLError(.badURL)
             }
             

@@ -11,8 +11,9 @@ import SwiftUI
 struct WaterlooTransitApp: App {
     var body: some Scene {
         let transitService = TransitService()
+        let viewModel = TransitViewModel(transitService: transitService)
         WindowGroup {
-            TransitView()
+            TransitView(transitViewModel: viewModel)
         }
     }
 }

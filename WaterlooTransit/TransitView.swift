@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct TransitView: View {
-    @State var vehicles: [VehiclePosition] = []
+//    @State var vehicles: [VehiclePosition] = []
     let gtfsURL = "https://webapps.regionofwaterloo.ca/api/grt-routes/api/vehiclepositions"
+    @ObservedObject var transitViewModel: TransitViewModel
 
     var body: some View {
         VStack {
-            List(vehicles) { vehicle in
+            List(transitViewModel.vehicles) { vehicle in
                 HStack{
                     Text("Vehicle Route: \(vehicle.route)")
                     Text("Vehicle latitude: \(vehicle.latitude)")
@@ -21,16 +22,16 @@ struct TransitView: View {
                 }
             }
         }
-        .onAppear {
-            Task{
-                let data = try  await TransitService.shared.fetchData(url: gtfsURL)
-                vehicles = data
-                print("Vehicle data: \(vehicles)")
-            }
-        }
+//        .onAppear {
+//            Task{
+//                let data = try  await TransitService.shared.fetchData(url: gtfsURL)
+//                vehicles = data
+//                print("Vehicle data: \(vehicles)")
+//            }
+//        }
     }
 }
 
-#Preview {
-    TransitView()
-}
+//#Preview {
+//    TransitView()
+//}
