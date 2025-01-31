@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F31D9ACC2D4C08D2003160E5 /* gtfs-realtime.proto in Sources */ = {isa = PBXBuildFile; fileRef = F31D9ACB2D4C08D2003160E5 /* gtfs-realtime.proto */; };
+		F31D9ADD2D4C0C0B003160E5 /* gtfs-realtime.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31D9ADC2D4C0C0B003160E5 /* gtfs-realtime.pb.swift */; };
+		F31D9AE32D4C3869003160E5 /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = F31D9AE22D4C3869003160E5 /* SwiftProtobuf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F31D9AAF2D4C0724003160E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F31D9A962D4C0722003160E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F31D9A9D2D4C0722003160E5;
+			remoteInfo = WaterlooTransit;
+		};
+		F31D9AB92D4C0724003160E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F31D9A962D4C0722003160E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F31D9A9D2D4C0722003160E5;
+			remoteInfo = WaterlooTransit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F31D9A9E2D4C0722003160E5 /* WaterlooTransit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterlooTransit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F31D9AAE2D4C0724003160E5 /* WaterlooTransitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterlooTransitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F31D9AB82D4C0724003160E5 /* WaterlooTransitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterlooTransitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F31D9ACB2D4C08D2003160E5 /* gtfs-realtime.proto */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.protobuf; path = "gtfs-realtime.proto"; sourceTree = "<group>"; };
+		F31D9ADC2D4C0C0B003160E5 /* gtfs-realtime.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "gtfs-realtime.pb.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		F31D9AA02D4C0722003160E5 /* WaterlooTransit */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = WaterlooTransit;
+			sourceTree = "<group>";
+		};
+		F31D9AB12D4C0724003160E5 /* WaterlooTransitTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = WaterlooTransitTests;
+			sourceTree = "<group>";
+		};
+		F31D9ABB2D4C0724003160E5 /* WaterlooTransitUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = WaterlooTransitUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F31D9A9B2D4C0722003160E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F31D9AE32D4C3869003160E5 /* SwiftProtobuf in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F31D9AAB2D4C0724003160E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F31D9AB52D4C0724003160E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F31D9A952D4C0722003160E5 = {
+			isa = PBXGroup;
+			children = (
+				F31D9ACB2D4C08D2003160E5 /* gtfs-realtime.proto */,
+				F31D9ADC2D4C0C0B003160E5 /* gtfs-realtime.pb.swift */,
+				F31D9AA02D4C0722003160E5 /* WaterlooTransit */,
+				F31D9AB12D4C0724003160E5 /* WaterlooTransitTests */,
+				F31D9ABB2D4C0724003160E5 /* WaterlooTransitUITests */,
+				F31D9AE12D4C3869003160E5 /* Frameworks */,
+				F31D9A9F2D4C0722003160E5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F31D9A9F2D4C0722003160E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F31D9A9E2D4C0722003160E5 /* WaterlooTransit.app */,
+				F31D9AAE2D4C0724003160E5 /* WaterlooTransitTests.xctest */,
+				F31D9AB82D4C0724003160E5 /* WaterlooTransitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F31D9AE12D4C3869003160E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F31D9A9D2D4C0722003160E5 /* WaterlooTransit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F31D9AC22D4C0724003160E5 /* Build configuration list for PBXNativeTarget "WaterlooTransit" */;
+			buildPhases = (
+				F31D9A9A2D4C0722003160E5 /* Sources */,
+				F31D9A9B2D4C0722003160E5 /* Frameworks */,
+				F31D9A9C2D4C0722003160E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				F31D9AA02D4C0722003160E5 /* WaterlooTransit */,
+			);
+			name = WaterlooTransit;
+			packageProductDependencies = (
+				F31D9AE22D4C3869003160E5 /* SwiftProtobuf */,
+			);
+			productName = WaterlooTransit;
+			productReference = F31D9A9E2D4C0722003160E5 /* WaterlooTransit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F31D9AAD2D4C0724003160E5 /* WaterlooTransitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F31D9AC52D4C0724003160E5 /* Build configuration list for PBXNativeTarget "WaterlooTransitTests" */;
+			buildPhases = (
+				F31D9AAA2D4C0724003160E5 /* Sources */,
+				F31D9AAB2D4C0724003160E5 /* Frameworks */,
+				F31D9AAC2D4C0724003160E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F31D9AB02D4C0724003160E5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F31D9AB12D4C0724003160E5 /* WaterlooTransitTests */,
+			);
+			name = WaterlooTransitTests;
+			packageProductDependencies = (
+			);
+			productName = WaterlooTransitTests;
+			productReference = F31D9AAE2D4C0724003160E5 /* WaterlooTransitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F31D9AB72D4C0724003160E5 /* WaterlooTransitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F31D9AC82D4C0724003160E5 /* Build configuration list for PBXNativeTarget "WaterlooTransitUITests" */;
+			buildPhases = (
+				F31D9AB42D4C0724003160E5 /* Sources */,
+				F31D9AB52D4C0724003160E5 /* Frameworks */,
+				F31D9AB62D4C0724003160E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F31D9ABA2D4C0724003160E5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F31D9ABB2D4C0724003160E5 /* WaterlooTransitUITests */,
+			);
+			name = WaterlooTransitUITests;
+			packageProductDependencies = (
+			);
+			productName = WaterlooTransitUITests;
+			productReference = F31D9AB82D4C0724003160E5 /* WaterlooTransitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F31D9A962D4C0722003160E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					F31D9A9D2D4C0722003160E5 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					F31D9AAD2D4C0724003160E5 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = F31D9A9D2D4C0722003160E5;
+					};
+					F31D9AB72D4C0724003160E5 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = F31D9A9D2D4C0722003160E5;
+					};
+				};
+			};
+			buildConfigurationList = F31D9A992D4C0722003160E5 /* Build configuration list for PBXProject "WaterlooTransit" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F31D9A952D4C0722003160E5;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F31D9ADE2D4C0C1B003160E5 /* XCRemoteSwiftPackageReference "swift-protobuf" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = F31D9A9F2D4C0722003160E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F31D9A9D2D4C0722003160E5 /* WaterlooTransit */,
+				F31D9AAD2D4C0724003160E5 /* WaterlooTransitTests */,
+				F31D9AB72D4C0724003160E5 /* WaterlooTransitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F31D9A9C2D4C0722003160E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F31D9AAC2D4C0724003160E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F31D9AB62D4C0724003160E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F31D9A9A2D4C0722003160E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F31D9ADD2D4C0C0B003160E5 /* gtfs-realtime.pb.swift in Sources */,
+				F31D9ACC2D4C08D2003160E5 /* gtfs-realtime.proto in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F31D9AAA2D4C0724003160E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F31D9AB42D4C0724003160E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F31D9AB02D4C0724003160E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F31D9A9D2D4C0722003160E5 /* WaterlooTransit */;
+			targetProxy = F31D9AAF2D4C0724003160E5 /* PBXContainerItemProxy */;
+		};
+		F31D9ABA2D4C0724003160E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F31D9A9D2D4C0722003160E5 /* WaterlooTransit */;
+			targetProxy = F31D9AB92D4C0724003160E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F31D9AC02D4C0724003160E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F31D9AC12D4C0724003160E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F31D9AC32D4C0724003160E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WaterlooTransit/Preview Content\"";
+				DEVELOPMENT_TEAM = TPSDBQUPSC;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anshulruhil.iExpense.WaterlooTransit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F31D9AC42D4C0724003160E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WaterlooTransit/Preview Content\"";
+				DEVELOPMENT_TEAM = TPSDBQUPSC;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anshulruhil.iExpense.WaterlooTransit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F31D9AC62D4C0724003160E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TPSDBQUPSC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anshulruhil.iExpense.WaterlooTransitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaterlooTransit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WaterlooTransit";
+			};
+			name = Debug;
+		};
+		F31D9AC72D4C0724003160E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TPSDBQUPSC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anshulruhil.iExpense.WaterlooTransitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaterlooTransit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WaterlooTransit";
+			};
+			name = Release;
+		};
+		F31D9AC92D4C0724003160E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TPSDBQUPSC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anshulruhil.iExpense.WaterlooTransitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WaterlooTransit;
+			};
+			name = Debug;
+		};
+		F31D9ACA2D4C0724003160E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TPSDBQUPSC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anshulruhil.iExpense.WaterlooTransitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WaterlooTransit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F31D9A992D4C0722003160E5 /* Build configuration list for PBXProject "WaterlooTransit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F31D9AC02D4C0724003160E5 /* Debug */,
+				F31D9AC12D4C0724003160E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F31D9AC22D4C0724003160E5 /* Build configuration list for PBXNativeTarget "WaterlooTransit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F31D9AC32D4C0724003160E5 /* Debug */,
+				F31D9AC42D4C0724003160E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F31D9AC52D4C0724003160E5 /* Build configuration list for PBXNativeTarget "WaterlooTransitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F31D9AC62D4C0724003160E5 /* Debug */,
+				F31D9AC72D4C0724003160E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F31D9AC82D4C0724003160E5 /* Build configuration list for PBXNativeTarget "WaterlooTransitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F31D9AC92D4C0724003160E5 /* Debug */,
+				F31D9ACA2D4C0724003160E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F31D9ADE2D4C0C1B003160E5 /* XCRemoteSwiftPackageReference "swift-protobuf" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-protobuf.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.28.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F31D9AE22D4C3869003160E5 /* SwiftProtobuf */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F31D9ADE2D4C0C1B003160E5 /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = SwiftProtobuf;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F31D9A962D4C0722003160E5 /* Project object */;
+}
