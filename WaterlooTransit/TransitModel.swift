@@ -7,9 +7,11 @@
 
 import Foundation
 
+// MARK: VehiclePosition
+
 struct VehiclePosition: Identifiable {
     let id: String
-    let route: String
-    let latitude: Float
-    let longitude: Float
+    var route: String
+    var latitude: Float
+    var longitude: Float
 }
