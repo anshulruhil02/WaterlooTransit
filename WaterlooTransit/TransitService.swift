@@ -22,7 +22,7 @@ class TransitService: TransitServiceProtocol {
             }
             
             let (data, _) = try await URLSession.shared.data(from: url)
-            print("data: \(data)")
+//            print("data: \(data)")
             return try await decodeGTFS(data: data)
         } catch {
             print("Error fetching the data")
@@ -48,7 +48,7 @@ class TransitService: TransitServiceProtocol {
                     vehicles.append(vehiclePosition)
                 }
             }
-            print("returns: \(vehicles)")
+//            print("returns: \(vehicles)")
             
             return vehicles
         } catch {

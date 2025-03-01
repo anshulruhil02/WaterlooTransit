@@ -18,7 +18,15 @@ class TransitViewModel: ObservableObject {
     }
     
     @Published var vehicles: [VehiclePosition] = []
+    @Published var routes: [String: [VehiclePosition]] = [:]
+    @Published var selectedRoutes: Set<String> = []
+    
     var fetchTask: Task<Void, Never>?
+    
+    var selectedCollectionVehicles: [String: [VehiclePosition]] {
+        let filteredVehicles = vehicles.filter { selectedRoutes.contains( $0.route ) }
+        return Dictionary(grouping: filteredVehicles, by: { $0.route })
+    }
     
     func startFetching() {
         guard fetchTask == nil else { return }
@@ -36,6 +44,15 @@ class TransitViewModel: ObservableObject {
         fetchTask = nil
     }
     
+    func toggleSelection(route: String) {
+        print("Toggling route: \(route)")
+        if selectedRoutes.contains(route) {
+            selectedRoutes.remove(route)
+        } else {
+            selectedRoutes.insert(route)
+        }
+    }
+    
     // MARK: Private
     
     private let transitService: TransitServiceProtocol
@@ -43,8 +60,10 @@ class TransitViewModel: ObservableObject {
         while !Task.isCancelled {
             do {
                 let collectVehicles = try await transitService.fetchData()
+                let routesCollection = Dictionary(grouping: collectVehicles, by: { $0.route })
                 await MainActor.run {
                     self.vehicles = collectVehicles
+                    self.routes = routesCollection
                 }
             } catch {
                 print("Error fetching data")

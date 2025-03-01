@@ -10,13 +10,19 @@ import SwiftUI
 struct TransitView: View {
     var body: some View {
         VStack {
-            Text("LAst update: \(lastUpdated)")
+            Text("Last update: \(lastUpdated)")
             
-            List(transitViewModel.vehicles) { vehicle in
-                HStack{
-                    Text("Vehicle Route: \(vehicle.route)")
-                    Text("Vehicle latitude: \(vehicle.latitude)")
-                    Text("Vehicle longitude: \(vehicle.longitude)")
+            List(transitViewModel.selectedCollectionVehicles.keys.sorted(), id: \.self) { route in
+                VStack{
+                    Text("Route: \(route)")
+                        .font(.title)
+                    ForEach(transitViewModel.selectedCollectionVehicles[route] ?? []) { vehicle in
+                        HStack {
+                            Text("id: \(vehicle.id)")
+                            Text("Lat: \(vehicle.latitude)")
+                            Text("Long: \(vehicle.longitude)")
+                        }
+                    }
                 }
             }
         }
@@ -31,6 +37,12 @@ struct TransitView: View {
                 lastUpdated = DateFormatter.localizedString(from: Date(), dateStyle: .none, timeStyle: .medium)
             }
         }
+        .sheet(isPresented: $routeSheet) {
+            RouteSelectorView(routes: transitViewModel.routes.keys.sorted(), viewModel: transitViewModel)
+                .presentationDetents([.fraction(0.1), .medium, .large])
+                .presentationDragIndicator(.visible)
+                .interactiveDismissDisabled()
+        }
     }
     
     // MARK: Internal
@@ -38,8 +50,7 @@ struct TransitView: View {
     let gtfsURL = "https://webapps.regionofwaterloo.ca/api/grt-routes/api/vehiclepositions"
     @ObservedObject var transitViewModel: TransitViewModel
     @State var lastUpdated: String = "Never"
+    
+    // MARK: Private
+    @State private var routeSheet = true
 }
-
-//#Preview {
-//    TransitView()
-//}

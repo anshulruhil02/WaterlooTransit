@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: VehiclePosition
 
-struct VehiclePosition: Identifiable {
+struct VehiclePosition: Identifiable, Hashable {
     let id: String
     var route: String
     var latitude: Float
