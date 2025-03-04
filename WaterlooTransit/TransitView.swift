@@ -41,6 +41,7 @@ struct TransitView: View {
             RouteSelectorView(routes: transitViewModel.routes.keys.sorted(), viewModel: transitViewModel)
                 .presentationDetents([.fraction(0.1), .medium, .large])
                 .presentationDragIndicator(.visible)
+                .presentationBackgroundInteraction(.enabled)
                 .interactiveDismissDisabled()
         }
     }
